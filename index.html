@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue js Tutorial</title>
-    <link rel="stylesheet" href="styles.appear-active-class=">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
     <!-- root element controlled by Vue() in app.js -->
     <div id="vue-app">
+
+        <h1>EVENTS</h1>
+        <p>My age is: {{ age }}</p>
+        <!-- buttons to add and subtract -->
+        <button
+            v-on:click="addYear(1)"
+        >
+            Add One
+        </button>
+        
+        <button
+        v-on:click="subtractYear(1)"
+        >
+            Subract One
+        </button>
+
+        <button
+        v-on:dblclick="addYear(10)"
+        >
+            Add Ten
+        </button>
+        
+        <button
+        v-on:dblclick="subtractYear(10)"
+        
+        >
+            Subrtract Ten
+        </button>
+
+        <h1>Track Mouse Movement</h1>
+        <div 
+            id="canvas"
+            v-on:mousemove="updateXY"
+        >
+            {{ x }},{{ y }}
+        </div>
+
         <h1>{{ greet() }}</h1>
         <p>Name: {{ name }}</p>
         <p>Job : {{ job }} </p>
@@ -21,7 +58,7 @@
             GitHub Repo for Data Binding
         </a>
         <p v-html="websiteTag">
-            
+
         </p>
         <input 
             type="text"

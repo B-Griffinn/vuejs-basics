@@ -9,13 +9,28 @@ new Vue({
         name: 'Benji',
         job: 'PRO cod Player',
         website: 'https://github.com/B-Griffinn/vuejs-basics',
-        websiteTag: '<a href="https://github.com/B-Griffinn/vuejs-basics"> BOUND </a>'
+        websiteTag: '<a href="https://github.com/B-Griffinn/vuejs-basics"> BOUND </a>',
+        age: 26,
+        x: 0,
+        y:0
     },
 
     // methonds
     methods: {
         greet: function() {
             return `Greeeetings ${this.name}!`
+        },
+
+        addYear: function(increment) {
+            this.age+=increment
+        },
+        subtractYear: function(decrement) {
+            this.age-=decrement
+        },
+        // track cursor
+        updateXY: function(event) {
+            this.x = event.offsetX;
+            this.y = event.offsetY;
         }
     },
 });
