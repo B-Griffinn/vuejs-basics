@@ -7,5 +7,13 @@ new Vue({
     // data property holds all of our data for this Vue instance
     data: {
         name: 'Benji',
+        job: 'PRO cod Player'
+    },
+
+    // methonds
+    methods: {
+        greet: function() {
+            return `Greeeetings ${this.name}!`
+        }
     },
 });
