@@ -13,6 +13,20 @@
         <h1>{{ greet() }}</h1>
         <p>Name: {{ name }}</p>
         <p>Job : {{ job }} </p>
+
+        <h3>Data Binding</h3>
+        <a
+            v-bind:href="website"
+        >
+            GitHub Repo for Data Binding
+        </a>
+        <p v-html="websiteTag">
+            
+        </p>
+        <input 
+            type="text"
+            v-bind:value="name"
+        >
     </div>
 
     <script src="app.js"></script>

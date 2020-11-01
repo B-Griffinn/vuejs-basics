@@ -7,7 +7,9 @@ new Vue({
     // data property holds all of our data for this Vue instance
     data: {
         name: 'Benji',
-        job: 'PRO cod Player'
+        job: 'PRO cod Player',
+        website: 'https://github.com/B-Griffinn/vuejs-basics',
+        websiteTag: '<a href="https://github.com/B-Griffinn/vuejs-basics"> BOUND </a>'
     },
 
     // methonds
