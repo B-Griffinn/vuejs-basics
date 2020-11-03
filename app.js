@@ -16,6 +16,9 @@ new Vue({
         x: 0,
         y:0,
         modifyMe: 0,
+        // CSS
+        available: false,
+        nearby: false,
     },
 
     // methonds
@@ -58,5 +61,11 @@ new Vue({
             console.log("add to B")
             return this.b + this.age
         },
+        compClasses: function() {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
+        }
     },
 });

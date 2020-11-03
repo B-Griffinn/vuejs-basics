@@ -11,6 +11,45 @@
     <!-- root element controlled by Vue() in app.js -->
     <div id="vue-app">
 
+        <h1>DYNAMIC CSS</h1>
+
+        <h2>Example 1 CSS</h2>
+        <!-- v-bind:class={<className>: <boolean> } -->
+        <div 
+            v-on:click="available=!available"
+            v-bind:class="{available: available}"
+        >
+            <span>TAXI DRIVER</span>
+        </div>
+
+        <h2>Example 2 css</h2>
+        <button
+            v-on:click="nearby = !nearby"
+        >   
+            Toggle Nearby
+        </button>
+
+        <button
+        v-on:click="available = !available"
+        >
+            Toggle Available
+        
+        </button>
+        <div
+            v-bind:class="compClasses"
+        >
+        <span>BABY DRIVER</span>
+        </div>
+
+
+        <br>
+
+
+
+
+
+
+
         <h1>COMPUTED PROPERTIES</h1>
         <button
             v-on:click="a++"
@@ -32,11 +71,6 @@
         <p>Age + B = {{ addToB }}</p>
 
         <br>
-
-
-
-
-
 
         <h1>TWO WAY DATA BINDING</h1>
         <label>NAME: </label>
