@@ -11,6 +11,22 @@
     <!-- root element controlled by Vue() in app.js -->
     <div id="vue-app">
 
+
+        <h1>KEYBOARD EVENTS</h1>
+        <label>NAME: </label>
+        <input
+            type="text"
+            v-on:keyup.enter="logName"
+        />
+
+        <label>AGE: </label>
+        <input
+            type="number"
+            v-on:keyup.alt.enter="logAge"        
+        />
+
+            
+            <hr>
         <h1>EVENT MODIFIERS</h1>
         <p>Modify Me: {{ modifyMe }}</p>
         <button
@@ -25,13 +41,6 @@
         >
             Prevent Default!!
         </a>
-
-
-
-
-
-
-
 
         <h1>EVENTS</h1>
         <p>My age is: {{ age }}</p>

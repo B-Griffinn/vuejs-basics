@@ -38,6 +38,12 @@ new Vue({
         },
         clickHref: function() {
             alert("You clicked meh")
+        },
+        logName: function() {
+            console.log('youn entered your name')
+        },
+        logAge: function() {
+            console.log('youn entered your age')
         }
     },
 });
