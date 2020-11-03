@@ -19,6 +19,8 @@ new Vue({
         // CSS
         available: false,
         nearby: false,
+        error: false,
+        success: false,
     },
 
     // methonds

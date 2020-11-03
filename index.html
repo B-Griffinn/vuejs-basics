@@ -10,9 +10,44 @@
 <body>
     <!-- root element controlled by Vue() in app.js -->
     <div id="vue-app">
+        
+        <h1>CONDITIONAL FUN</h1>
+        <!-- V-IF OR V-SHOW -->
+        <button
+            v-on:click="error = !error"
+        >
+            Toggle Error
+        </button>
 
+        <button
+            v-on:click="success = !success"
+
+        >
+            Toggle Success
+        </button>
+        <p
+            v-show="error"
+        >
+            ERROR FOUND - RUN
+        </p>
+        <p
+            v-show="success"
+        >
+            GREAT SUCCESS
+        </p>
+        <!-- <p
+            v-if="error"
+        >
+        ERROR FOUND - RUN
+        </p>
+        <p
+            v-else-if="success"
+        >
+            GREAT SUCCESS
+        </p> -->
+
+        <br>
         <h1>DYNAMIC CSS</h1>
-
         <h2>Example 1 CSS</h2>
         <!-- v-bind:class={<className>: <boolean> } -->
         <div 
