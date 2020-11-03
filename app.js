@@ -8,14 +8,14 @@ new Vue({
     data: {
         name: '',
         age: 0,
+        a: 0,
+        b: 0,
         job: 'PRO cod Player',
         website: 'https://github.com/B-Griffinn/vuejs-basics',
         websiteTag: '<a href="https://github.com/B-Griffinn/vuejs-basics"> BOUND </a>',
         x: 0,
         y:0,
         modifyMe: 0,
-        a: 0,
-        b: 0
     },
 
     // methonds
@@ -47,6 +47,16 @@ new Vue({
         },
         logAge: function() {
             // console.log('youn entered your age')
-        }
+        },
+    },
+    computed: {
+        addToA: function() {
+            console.log("add to A")
+            return this.a + this.age
+        },
+        addToB: function() {
+            console.log("add to B")
+            return this.b + this.age
+        },
     },
 });
