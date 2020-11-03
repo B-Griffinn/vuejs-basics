@@ -6,11 +6,11 @@ new Vue({
 
     // data property holds all of our data for this Vue instance
     data: {
-        name: 'Benji',
+        name: '',
+        age: 0,
         job: 'PRO cod Player',
         website: 'https://github.com/B-Griffinn/vuejs-basics',
         websiteTag: '<a href="https://github.com/B-Griffinn/vuejs-basics"> BOUND </a>',
-        age: 26,
         x: 0,
         y:0,
         modifyMe: 0,
@@ -40,10 +40,11 @@ new Vue({
             alert("You clicked meh")
         },
         logName: function() {
-            console.log('youn entered your name')
+            // console.log('youn entered your name')
+            
         },
         logAge: function() {
-            console.log('youn entered your age')
+            // console.log('youn entered your age')
         }
     },
 });

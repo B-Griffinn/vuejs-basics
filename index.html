@@ -11,7 +11,24 @@
     <!-- root element controlled by Vue() in app.js -->
     <div id="vue-app">
 
+        <h1>TWO WAY DATA BINDING</h1>
+        <label>NAME: </label>
+        <input
+            type="text"
+            v-model="name"
+        />
+        <span>{{ name }}</span>
+        <br>
+        
+        <label>AGE: </label>
+        <input
+            type="number"
+            v-model="age"      
+        />
+        <span>{{ age }}</span>
 
+
+<hr>
         <h1>KEYBOARD EVENTS</h1>
         <label>NAME: </label>
         <input
@@ -24,8 +41,6 @@
             type="number"
             v-on:keyup.alt.enter="logAge"        
         />
-
-            
             <hr>
         <h1>EVENT MODIFIERS</h1>
         <p>Modify Me: {{ modifyMe }}</p>
