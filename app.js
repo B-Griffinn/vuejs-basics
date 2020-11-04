@@ -6,8 +6,8 @@ new Vue({
 
     // data property holds all of our data for this Vue instance
     data: {
-        name: '',
-        age: 0,
+        // name: '',
+        // age: 0,
         a: 0,
         b: 0,
         job: 'PRO cod Player',
@@ -21,6 +21,14 @@ new Vue({
         nearby: false,
         error: false,
         success: false,
+        // Looping with v-for
+        name: 'ben',
+        characters: ['Mario', 'Luigi', 'Yoshi', 'Bowser'],
+        ninjas: [
+            {name: 'Mario' , age: 25 },
+            {name: 'Benji', age: 35 },
+            {name: 'Ken', age: 45 },
+        ]
     },
 
     // methonds
