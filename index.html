@@ -17,14 +17,43 @@
         >
         <h3>CHARACTER LIST FOUND WITH A `v-for`</h3>
         <li
-            v-for="character in characters"
+            v-for="(character, index) in characters"
         >
-            {{ character }}
+            {{ index + 1 }}. {{ character }}
         </li>
         </ul>
 
+        <ul>
+            <h1>NINJAS</h1>
+            <li
+                v-for="(ninja, index) in ninjas"
+            >
+                {{ index + 1 }}. {{ ninja.name }} - {{ ninja.age }}
+            </li>
+        </ul>
 
+        <template
+            v-for="(ninja, index) in ninjas"
+        >
+            <h3>
+                {{ index + 1 }}. {{ ninja.name }}
+            </h3>
+            <p>{{ ninja.age }} </p>
+        </template>
 
+        <hr>
+        <h3>OBJECT LOOPOING</h3>
+        <template
+            v-for="ninja in ninjas"
+        >
+            <div
+                v-for="(val, key) in ninja"
+            >
+                <p>{{ key }} - {{ val }}</p>
+            </div>
+        </template>
+
+        <hr>
 
         
         <h1>CONDITIONAL FUN</h1>
