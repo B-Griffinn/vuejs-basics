@@ -91,7 +91,7 @@ var secondInstance = new Vue({
 
     methods: {
         changeTitle: function() {
-            firstInstance.title = 'CHANGED ME'
+            firstInstance.title = 'CHANGED ME';
         }
     },
 
@@ -102,3 +102,6 @@ var secondInstance = new Vue({
     },
 
 });
+
+// NOT IDEAL BUT WORKS
+// secondInstance.title = "Changed from global ";
