@@ -8,28 +8,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
+    <h1>Components</h1>
        <!-- VUE APP ONE -->
     <div id="vue-app-one">
-        <h1> {{ title }} </h1>
-    </div> <!-- END OF APP ONE -->
+        <h3>VUE APP ONE</h3>
+        <greeting></greeting>
+    </div> 
+    <!-- END OF APP ONE -->
 
     
     <!-- VUE APP TWO -->
     <div id="vue-app-two">
-        <h1>{{ title }}</h1>
-        <p> {{ greet }} </p>
-        <button
-            v-on:click="changeTitle"
-        >
-            Change App One title
-        </button>
-        
-        <hr>
-        <hr>
-        <hr>
-    </div> <!-- END OF APP TWO -->
+        <h3>VUE APP TWO</h3>
+        <greeting></greeting>
+    </div> 
+    <!-- END OF APP TWO -->
 
-    
+
     <script src="app.js"></script>
 </body>
 </html>
