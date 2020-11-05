@@ -8,13 +8,28 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
+
+    <!-- VUE APP TWO -->
+    <div id="vue-app-two">
+        <h1>{{ title }}</h1>
+        <p> {{ greet }} </p>
+    </div>
+    <button
+        v-on:click="changeTitle"
+    >
+        Change App One title
+    </button>
+    
+    <hr>
+    <hr>
+    <hr>
     <!-- root element controlled by Vue() in app.js -->
-    <div id="vue-app">
+    <div id="vue-app-one">
+
+        <h1> {{ title }} </h1>
+
 
         <!-- v-for="<iterator variable> in <list/arr to loop through>"  -->
-        <ul
-        
-        >
         <h3>CHARACTER LIST FOUND WITH A `v-for`</h3>
         <li
             v-for="(character, index) in characters"
@@ -252,7 +267,6 @@
             v-bind:value="name"
         >
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>

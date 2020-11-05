@@ -1,13 +1,14 @@
 // main instance
-new Vue({
+var firstInstance = new Vue({
     // this instance controls the vue-app element in html
     // connection to HTML page
-    el: '#vue-app',
+    el: '#vue-app-one',
 
     // data property holds all of our data for this Vue instance
     data: {
         // name: '',
         // age: 0,
+        title: 'Vue App ONE',
         a: 0,
         b: 0,
         job: 'PRO cod Player',
@@ -78,4 +79,26 @@ new Vue({
             }
         }
     },
+});
+
+// second instance 
+var secondInstance = new Vue({
+    el: '#vue-app-two',
+
+    data: {
+        title: 'VUE APP ONE'
+    },
+
+    methods: {
+        changeTitle: function() {
+            firstInstance.title = 'CHANGED ME'
+        }
+    },
+
+    computed: {
+        greet: function() {
+            return 'Greetings from application two!'
+        }
+    },
+
 });
